@@ -1,0 +1,13 @@
+a = input("Введите выражение: ")
+if a.find ("+") !=-1:
+    n=a.find('+')
+    print(a,"=",float(a[:n])+float(a[n+1:len(a)]))
+elif a.find ("-") !=-1:
+    s=a.find('-')
+    print(a,"=",float(a[:s])-float(a[s+1:len(a)]))
+elif a.find ("*") !=-1:
+    n=a.find('*')
+    print(a,"=",float(a[:n])*float(a[n+1:len(a)]))
+elif a.find ("/") !=-1:
+    n=a.find('/')
+    print(a,"=",float(a[:n])/float(a[n+1:len(a)]))
